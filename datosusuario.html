@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Datos de Usuario</title> 
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>  
+<body>
+    <form class="formulario" id="cliente-form" onsubmit="return validarDatosUsuario()">
+        <h1>Datos de Usuario</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="nombresApellidos" placeholder="Nombres y Apellidos">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="cedula" placeholder="Cédula de Identidad">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="telefono" placeholder="Número de teléfono">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="correo" placeholder="Correo Electrónico">
+            </div>
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="direccion" placeholder="Dirección Residencial">
+            </div>
+
+            <button type="submit" class="button">REGISTRAR</button>
+            <p id="mensaje"></p>
+            <p>Verifica que los datos estén correctamente ingresados. Caso contrario más adelante no podrás modificarlos.</p>
+            <p>¿Quieres Volver? <a class="link" href="datosvehiculo.html">Atrás</a></p>
+        </div>
+    </form>
+
+    <script src="registro.js"></script>
+</body>
+</html>
